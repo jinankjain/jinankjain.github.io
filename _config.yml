@@ -1,0 +1,102 @@
+# Site settings
+title:       Jinank Jain
+email:       jinank94@gmail.com
+author:      Jinank Jain
+description: "This a personal wesbite which contains information about me and my musing"
+baseurl:     ""
+url:         "http://jinankjain.github.io"
+date_format: "%b %-d, %Y"
+
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics:
+google_tag_manager:
+# Bing services
+bing_verification:
+
+# Optional features
+animated:             true
+show_related_posts:   false
+show_post_footers:    true
+show_social_icons:    true
+enable_mathjax: true
+extended_fonts: true
+enable_anchorjs: false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: jinankjain
+
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
+
+# Social icons
+github_username: jinankjain
+bitbucket_username: jinankjain
+stackoverflow_id:
+twitter_username: jinank_jain
+skype_username: jinankjain94
+steam_nickname:
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id: jinankjain
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: true
+share_linkedin: true
+share_digg: true
+share_tumblr: true
+share_reddit: true
+share_stumbleupon: true
+share_hackernews: true
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
+sass:
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Video Player</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		function loadAnotherVideo() {
+    			var video = document.getElementById("videoPlayer");
+    			var source = document.getElementById("videoSource");
+			video.pause();
+			var videoURL = document.getElementById("videoURL").value;
+    			source.src = videoURL;
+			video.load();
+		}	
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid" align="center">
+		<h1>Video Player</h1>
+		<div>
+    			<label for="videoURl">URL of video that you want to watch</label>
+    			<input type="text" class="form-control" id="videoURL" placeholder="Video URL">
+			<br>
+  			<button type="submit" onclick="loadAnotherVideo()" class="btn btn-default">Submit</button>
+		</div>
+		<video id="videoPlayer" width="320" height="240" controls>
+    			<source id="videoSource" src="" type="video/webm">
+		</video>
+	</div>
+</body>
+
+</html>
